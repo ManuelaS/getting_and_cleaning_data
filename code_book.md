@@ -3,9 +3,7 @@
 ### Course Project
 
 #### Description
-This code book describes the source dataset and the data analysis pipeline leading to the generation of the txt file 
-
-'tidy_dataset.txt'.
+This code book describes the source dataset and the data analysis pipeline leading to the generation of the txt file 'tidy_dataset.txt'.
 
 #### Setup
     1. Set working directory
@@ -16,18 +14,13 @@ This code book describes the source dataset and the data analysis pipeline leadi
     3. Source the script 'run_analysis.R'
 
 #### Source dataset
- The dataset is available for download [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR
-
-%20Dataset.zip). For a detailed description of the experimental design and motivation along with data collection, please refer to 
-
-['Human Activity Recognition Using Smartphones Data Set'](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using
-
-+Smartphones).
+ The dataset is available for download [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip). For a detailed description of the experimental design and motivation along with data collection, please refer to ['Human Activity Recognition Using Smartphones Data Set'](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
 
 #### Data processing
 
 ##### Downloading and loading data
-Code to download the and extract data is included in run_analysis. The resulting folder 'UCI HAD Dataset' will include:
+Code to download the and extract data is included in run_analysis. The resulting folder 'UCI HAD Dataset' will include
+
     * 'README.txt';
     * 'features_info.txt';
     * 'features.txt':
@@ -44,9 +37,7 @@ Code to download the and extract data is included in run_analysis. The resulting
         * 'y_test.txt';
 
 ##### Data processing
-    1. Merge train (7352 observation of 561 variables) and test(2947 observation of 561 variables) dataset, resulting in 10299x561 
-
-data frame. Columns are of format numeric (range -1 to +1) containing measurements;
+    1. Merge train (7352 observation of 561 variables) and test(2947 observation of 561 variables) dataset, resulting in 10299x561 data frame. Columns are of format numeric (range -1 to +1) containing measurements;
 
     2. Load 'features.txt' into a dataframe (561 observation mapping a numeric feature_id to a descriptive feature id) and retain only features which include either 'mean' or 'std' in their label;
 
